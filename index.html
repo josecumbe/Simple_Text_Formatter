@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+
+    <title>FTNow - Home</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="FTNow"></a>
+
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="demo.html">Demo</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a  class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a  class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="privacy.html">Privacy</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+    <div class="centerStage container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1><img src="img/title.png"></h1>
+                <p>FTNow is your online text formatter. 
+                    To format your text you just need to insert it in the left-side field, 
+                    select a format option and click ‘Format’.</p>
+            </div>
+        </div>
+
+        <div class="row my-2">
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <div class="form-control" id="inputText" placeholder="Input your text here...." contenteditable="true"></div>
+                      </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        
+                        <div class="form-control output" id="outputText" placeholder="Formatted text comes here..." disabled></div>
+                    </div>
+                </form>                    
+
+            </div>
+        </div>
+
+        <div class="row my-1">
+            <div class="col-6 text-center">
+                <button type="button" class="btn btn-primary" onclick="javascript:eraseText();">Clear</button>
+            </div>
+            <div class="col-6 text-center">
+                <button type="button" class="btn btn-primary" onclick="javascript:copyText();">Copy</button>
+            </div>
+        </div>
+
+        <hr class="my-4"/>
+
+        <div class="row">
+            
+                <div class="col-6 my-3">
+                    <h2 class="second-title">Formatting Options</h2>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="Lowercase" id="op1" >Lowercase
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="Uppercase" id="op2" >Uppercase
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="Bold" id="op3" >Bold
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="Italic" id="op4" >Italic
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6 my-3">
+                    <h2 class="second-title">Filter text sections</h2>
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control output" name="comment"
+                            rows="3" placeholder="Input you text here...(separate using comma)" id="filterTA" ></textarea>
+                          </div>
+                    </form>
+                </div>
+        </div>
+
+        <hr/>
+
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <button type="button" class="btn btn-success" onclick="javascript:formatText();">Format</button>
+            </div>
+        </div>
+
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Copyright &copy;2020 Format Text Now - All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/js/script.js"></script>
+  </body>
+
+</html>
